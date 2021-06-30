@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B7DD5D2268C788F00E7E863 /* RcpTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DD5D1268C788F00E7E863 /* RcpTblCell.swift */; };
 		0BA450F5268C58F2006D2221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA450F4268C58F2006D2221 /* AppDelegate.swift */; };
 		0BA450F7268C58F2006D2221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA450F6268C58F2006D2221 /* ViewController.swift */; };
 		0BA450FA268C58F2006D2221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA450F8268C58F2006D2221 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7DD5D1268C788F00E7E863 /* RcpTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcpTblCell.swift; sourceTree = "<group>"; };
 		0BA450F1268C58F2006D2221 /* RciepieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RciepieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA450F4268C58F2006D2221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BA450F6268C58F2006D2221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				0BA450F4268C58F2006D2221 /* AppDelegate.swift */,
 				0BA450F6268C58F2006D2221 /* ViewController.swift */,
 				0BA45106268C63FE006D2221 /* MenuVC.swift */,
+				0B7DD5D1268C788F00E7E863 /* RcpTblCell.swift */,
 				0BA45108268C670A006D2221 /* Extensions.swift */,
 				0BA450F8268C58F2006D2221 /* Main.storyboard */,
 				0BA450FB268C58FD006D2221 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7DD5D2268C788F00E7E863 /* RcpTblCell.swift in Sources */,
 				0BA450F7268C58F2006D2221 /* ViewController.swift in Sources */,
 				0BA450F5268C58F2006D2221 /* AppDelegate.swift in Sources */,
 				0BA45107268C63FE006D2221 /* MenuVC.swift in Sources */,

@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     private let mylbl : UILabel = {
         let lbl = UILabel()
-        lbl.font = .systemFont(ofSize : 40)
+        lbl.font = .systemFont(ofSize : 50)
         lbl.textColor = .white
         
         lbl.text = "V.R. RECIPE"
@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     private let mybtn: UIButton = {
         let btn = UIButton()
         btn.setTitle("CLICK ME !!", for: .normal)
-        btn.setTitleColor(.yellow, for: .normal)
-        btn.layer.borderWidth = 4
+        btn.setTitleColor(.white, for: .normal)
+        btn.layer.borderWidth = 5
         
         btn.addTarget(self, action: #selector(nextvc), for: .touchUpInside)
-        btn.backgroundColor = .white
-        btn.layer.cornerRadius = 10
+        btn.backgroundColor = .black
+        btn.layer.cornerRadius = 45
         return btn
     }()
     @objc func nextvc(){
@@ -42,12 +42,13 @@ class ViewController: UIViewController {
         txt.textColor = .blue
         txt.borderStyle = .roundedRect
         txt.font = UIFont(name : "", size : 20.0)
-       
-        
+        txt.textAlignment = .center
+
         return txt
     }()
     private let pswd:UITextField = {
         let txt = UITextField()
+        txt.textAlignment = .center
         txt.placeholder = "Enter Password"
         txt.textColor = .blue
         txt.borderStyle = .roundedRect
@@ -77,7 +78,9 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
        // bgimg.frame = CGRect(x:0, y: view.safeAreaInsets.top, width: view.width, height: 700)
         mylbl.frame = CGRect(x: 40,y: 200,width: view.width-40,height: 40)
-        user.frame = CGRect(x: 40,y: 200,width: view.width-40,height: 40)
+        user.frame = CGRect(x: 20,y: mylbl.bottom + 50,width: view.width-40,height: 80)
+        pswd.frame = CGRect(x: 20,y: user.bottom + 20,width: view.width-40,height: 80)
+        mybtn.frame = CGRect(x: 20,y: pswd.bottom + 20,width: view.width-40,height: 80)
     }
 
 }

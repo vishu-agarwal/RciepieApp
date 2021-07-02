@@ -50,8 +50,8 @@ class MenuCell: UITableViewCell {
         contentView.addSubview(mytxt)
         contentView.addSubview(mybtn)
         myImg.frame = CGRect(x: 20,y:10,width: 80,height: 100)
-        mytxt.frame = CGRect (x: myImg.right + 15,y:10,width: 140,height: 80)
-        mybtn.frame = CGRect(x: contentView.width - 40, y: 80, width: 30,height: 30)
+        mytxt.frame = CGRect (x: myImg.right + 7,y:10,width: 140,height: 80)
+        mybtn.frame = CGRect(x: mytxt.right + 10, y: 80, width: 30,height: 30)
     }
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -19,34 +19,38 @@ class MenuCell: UITableViewCell {
         return img
     }()
     
-    private let mylbl : UILabel = {
-        let lbl = UILabel()
-  
-        lbl.font = .boldSystemFont(ofSize: 25)
-        
-        return lbl
+    
+    
+    private let mytxt:UITextView = {
+        let txt = UITextView()
+        txt.isEditable = false
+        txt.textColor = .blue
+        txt.font = .boldSystemFont(ofSize: 25)
+        txt.textAlignment = .center
+        return txt
     }()
     
-    func setupFoodCellWith(title name:String, index:Int, and state: Bool){
+    func setupFoodCellWith(title name:String, Abt about: String, index:Int, and state:Bool){
         myImg.image = UIImage(named: name)
-        mylbl.text = name
+        mytxt.text = about
+        mybtn.tag = index
         
-        setupUI(at: index, with: state)
+        setupUI(at: index , with: state)
     }
     public let mybtn: UIButton = {
         let btn = UIButton()
-        btn.setImage(UIImage(named: "next"), for: .normal)
-       btn.tintColor = .black
+        btn.setImage(UIImage(contentsOfFile: "chevron.right.3"), for: .normal)
+        btn.tintColor = .black
         btn.layer.cornerRadius = 10
         return btn
     }()
-    private func setupUI(at index:Int, with state:Bool){
+    private func setupUI(at index:Int , with state:Bool){
         
         contentView.addSubview(myImg)
-        contentView.addSubview(mylbl)
+        contentView.addSubview(mytxt)
         contentView.addSubview(mybtn)
         myImg.frame = CGRect(x: 20,y:10,width: 80,height: 100)
-        mylbl.frame = CGRect (x: myImg.right + 20,y:10,width: 140,height: 80)
+        mytxt.frame = CGRect (x: myImg.right + 15,y:10,width: 140,height: 80)
         mybtn.frame = CGRect(x: contentView.width - 40, y: 80, width: 30,height: 30)
     }
     override func awakeFromNib() {

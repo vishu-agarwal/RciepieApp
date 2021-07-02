@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Login: UIViewController {
 
     private let mylbl : UILabel = {
         let lbl = UILabel()

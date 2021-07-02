@@ -14,8 +14,8 @@ class MenuVC: UIViewController {
     
     private var foodState = [Int]()
     
-    private var foodImg = ["Samosa","Rajbhog","Kachori","Chaat","Jalebi","DalBatti","MirchiBada"]
-    private var foodAbt = ["SAMOSA","RAJBHOG ","KACHORI","CHAAT","JALEBI","DAL-BATTI","MIRCHI-BADA"]
+    private var foodImg = ["samosa","dalbatti","malpuda","mirchiwada","jalebi","dahichatt","kachori"]
+    private var foodAbt = ["Samosa","Dal-Batti ","Mal-Puda","Mirchi-Bada","JALEBI","Dahi-Chatt","Kachori"]
     
     
     override func viewDidLoad() {
@@ -51,7 +51,7 @@ extension MenuVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
-        cell.setupFoodCellWith(title: foodImg[indexPath.row], index: indexPath.row, and: (foodState.contains(indexPath.row) ? true : false))
+        cell.setupFoodCellWith(title: foodImg[indexPath.row], Abt: foodAbt[indexPath.row], index: indexPath.row , and: (foodState.contains(indexPath.row) ? true : false))
         
         cell.mybtn.addTarget(self,action: #selector(openDetails), for: .touchUpInside)
         return cell
@@ -75,7 +75,7 @@ extension MenuVC: UITableViewDelegate, UITableViewDataSource{
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 120
     }
     
     @objc private func openDetails(_sender:Int) {

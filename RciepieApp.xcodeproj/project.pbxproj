@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B7DD5D2268C788F00E7E863 /* RcpTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DD5D1268C788F00E7E863 /* RcpTblCell.swift */; };
+		0B7B9D26268EEF5A00FA5033 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B9D25268EEF5A00FA5033 /* WebVC.swift */; };
+		0B7B9D28268EEFC200FA5033 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B9D27268EEFC200FA5033 /* MenuCell.swift */; };
 		0BA450F5268C58F2006D2221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA450F4268C58F2006D2221 /* AppDelegate.swift */; };
-		0BA450F7268C58F2006D2221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA450F6268C58F2006D2221 /* ViewController.swift */; };
+		0BA450F7268C58F2006D2221 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA450F6268C58F2006D2221 /* Login.swift */; };
 		0BA450FA268C58F2006D2221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA450F8268C58F2006D2221 /* Main.storyboard */; };
 		0BA450FC268C58FD006D2221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA450FB268C58FD006D2221 /* Assets.xcassets */; };
 		0BA450FF268C58FD006D2221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA450FD268C58FD006D2221 /* LaunchScreen.storyboard */; };
@@ -18,10 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B7DD5D1268C788F00E7E863 /* RcpTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcpTblCell.swift; sourceTree = "<group>"; };
+		0B7B9D25268EEF5A00FA5033 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		0B7B9D27268EEFC200FA5033 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0BA450F1268C58F2006D2221 /* RciepieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RciepieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA450F4268C58F2006D2221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BA450F6268C58F2006D2221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BA450F6268C58F2006D2221 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0BA450F9268C58F2006D2221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BA450FB268C58FD006D2221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA450FE268C58FD006D2221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,9 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				0BA450F4268C58F2006D2221 /* AppDelegate.swift */,
-				0BA450F6268C58F2006D2221 /* ViewController.swift */,
+				0BA450F6268C58F2006D2221 /* Login.swift */,
 				0BA45106268C63FE006D2221 /* MenuVC.swift */,
-				0B7DD5D1268C788F00E7E863 /* RcpTblCell.swift */,
+				0B7B9D27268EEFC200FA5033 /* MenuCell.swift */,
+				0B7B9D25268EEF5A00FA5033 /* WebVC.swift */,
 				0BA45108268C670A006D2221 /* Extensions.swift */,
 				0BA450F8268C58F2006D2221 /* Main.storyboard */,
 				0BA450FB268C58FD006D2221 /* Assets.xcassets */,
@@ -144,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7DD5D2268C788F00E7E863 /* RcpTblCell.swift in Sources */,
-				0BA450F7268C58F2006D2221 /* ViewController.swift in Sources */,
+				0BA450F7268C58F2006D2221 /* Login.swift in Sources */,
 				0BA450F5268C58F2006D2221 /* AppDelegate.swift in Sources */,
+				0B7B9D28268EEFC200FA5033 /* MenuCell.swift in Sources */,
+				0B7B9D26268EEF5A00FA5033 /* WebVC.swift in Sources */,
 				0BA45107268C63FE006D2221 /* MenuVC.swift in Sources */,
 				0BA45109268C670B006D2221 /* Extensions.swift in Sources */,
 			);
